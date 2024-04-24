@@ -35,3 +35,7 @@
 
 - Peter Strömberg -- ønsker å spørre om han vil navigere, og om han vil være rådgiver
 - Erik Assum -- ønsker å spørre om han vil være rådgiver
+
+## Guide til mob-programmering
+
+Du kan få hjelp, hvis du vil!
