@@ -22,7 +22,16 @@
     - fs/absolutize
     - fs/expand-home
 - og litt live-programmering.
-
 - Mob-programmering
-
 - Q/A, "hvis Michiel Borkent var med på video, hva ville du spurt om?"
+
+## Gode hjelpere jeg har fått ja fra
+
+- Christian Johansen har sagt ja til å navigere og til å være rådgiver når andre navigerer
+- Olav har sagt tentativt ja til å demonstrere en babashka-funksjon
+- Michiel Borkent har sagt ja til å være med på en halvtimes Q/A
+
+## Gode hjelpere jeg ikke har spurt ennå
+
+- Peter Strömberg -- ønsker å spørre om han vil navigere, og om han vil være rådgiver
+- Erik Assum -- ønsker å spørre om han vil være rådgiver
