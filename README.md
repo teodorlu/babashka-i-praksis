@@ -39,3 +39,29 @@
 ## Guide til mob-programmering
 
 Du kan få hjelp, hvis du vil!
+
+## Funksjoner fra `babashka/fs`, `babashka/cli` og `babashka/process`
+
+Funksjoner jeg har brukt i et prosjekt:
+
+``` clojure
+$ clj-kondo --lint src --config '{:analysis true :output {:format :edn}}' | bb -e '(def ana (edn/read-string (slurp *in*))) (prn (->> ana :analysis :var-usages (filter #('"'"'#{babashka.fs babashka.process babashka.cli} (:to %))) (map (juxt :to :name)) frequencies (sort-by second) reverse))' | jet
+([[babashka.fs file] 7]
+ [[babashka.fs exists?] 6]
+ [[babashka.fs file-name] 3]
+ [[babashka.fs canonicalize] 3]
+ [[babashka.fs last-modified-time] 3]
+ [[babashka.fs list-dir] 3]
+ [[babashka.process shell] 3]
+ [[babashka.fs create-dirs] 2]
+ [[babashka.cli coerce] 2]
+ [[babashka.fs xdg-config-home] 2]
+ [[babashka.fs which] 2]
+ [[babashka.process process] 1]
+ [[babashka.fs delete-if-exists] 1]
+ [[babashka.cli dispatch] 1]
+ [[babashka.process tokenize] 1]
+ [[babashka.fs directory?] 1]
+ [[babashka.fs file-time->millis] 1]
+ [[babashka.fs glob] 1])
+```
