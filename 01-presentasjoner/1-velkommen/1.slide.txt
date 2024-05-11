@@ -1,0 +1,12 @@
+Velkommen til BABASHKA I PRAKSIS
+
+    en Oslo Clojure Meetup
+
+Agenda:
+
+    16:00-16:45 Mat / drikke / prat
+    16:45-17:45 Presentasjoner
+
+    Kort pause
+
+    18:00-19:00 Mob-programmering / QA
