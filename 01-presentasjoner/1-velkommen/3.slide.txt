@@ -2,5 +2,4 @@ Hvis du hadde hatt Borkdude i rommet,
     hvilket spørsmål ville du stilt?
 
 Tenk på det underveis,
-    det blir QA til slutt,
-    og vi skal prøve å gi gode svar!
+    det blir QA til slutt!
