@@ -1,0 +1,9 @@
+BABASHKA-SCRIPT SOM ER ÉN FIL
+
+ 1. `touch script.clj`
+
+ 2. `chmod +x script.clj`
+
+ 3. `echo '#!/usr/bin/env bb' > script.clj`
+
+ 4. `echo '(println :hello-oslo)' >> script.clj`

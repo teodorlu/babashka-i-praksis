@@ -1,0 +1,9 @@
+BABASHKA I PRAKSIS
+
+ 1. Babashka-script som er én fil
+
+ 2. Et JVM/BB-kompatibelt Clojure
+    -prosjekt
+
+ 3. babashka/cli, babashka/fs og
+    babashka/process

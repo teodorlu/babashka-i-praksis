@@ -1,0 +1,7 @@
+ET JVM/BB-KOMPATIBELT CLOJURE-PROSJEKT
+
+Samme avhengigheter med Babashka og JVM Clojure:
+
+$ cat bb.edn
+{:deps {io.github.teodorlu/neil-quickadd {:local/root "."}}
+ :bbin/bin {neil-quickadd {:main-opts ["-m" "teodorlu.neil-quickadd/-main"]}}}
