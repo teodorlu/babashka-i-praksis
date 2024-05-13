@@ -1,10 +1,10 @@
 Del 1: Presentasjoner & demonstrasjoner (60 min)
 
-1. Hva er Babashka? (Teodor)
+ 1. Hva er Babashka? (Teodor)
 
-2. Babashka i praksis (Teodor)
+ 2. Babashka i praksis (Teodor)
 
-3. `babashka.fs/glob` (Olav)
+ 3. `babashka.fs/glob` (Olav)
 
-4. Live-demo: remote management av docker containers.
-   Prepare for implosion. (Emil)
+ 4. Live-demo: remote management av docker containers.
+    Prepare for implosion. (Emil)
