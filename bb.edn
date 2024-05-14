@@ -1,1 +1,2 @@
-{:paths ["src"]}
+{:paths ["src"]
+ :deps {io.github.teodorlu/babashka-i-praksis {:local/root "."}}}
