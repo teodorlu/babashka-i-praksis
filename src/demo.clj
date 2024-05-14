@@ -1,6 +1,12 @@
 (ns demo
   (:require
-    [babashka.fs :as fs]))
+   [babashka.cli :as cli]
+   [babashka.fs :as fs]
+   [babashka.process :as process]
+   [clojure.string :as str]))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BABASHKA/FS
 
 (comment
   ;; fs operates on a File type
@@ -37,3 +43,53 @@
 
   (fs/create-dirs "my/weird/new-folder-hierarchy")
   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BABASHKA/PROCESS
+
+(comment
+  ;; mostly you just need two functions:
+  process/shell :and process/process
+
+  ;; But mostly, you just need process/shell.
+
+  (str/split-lines (:out (process/shell {:out :string} "ls")))
+  ;; => ["README.md"
+  ;;     "bb.edn"
+  ;;     "deps.edn"
+  ;;     "how.sh"
+  ;;     "mob.sh"
+  ;;     "qa.sh"
+  ;;     "slides"
+  ;;     "src"
+  ;;     "welcome.sh"
+  ;;     "what.sh"]
+
+  )
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BABASHKA/CLI
+
+(comment
+  ;; mostly you just need two functions:
+  cli/dispatch :and cli/parse-opts
+
+  (cli/parse-opts ["--verbose" "--depth" "3"])
+  ;; => {:verbose true, :depth 3}
+
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BABASHKA/CLI and BABASHKA/PROCESS together
+
+(defn cmd-start [opts]
+  (prn [:started opts]))
+
+(defn cmd-nvim [_opts]
+
+  )
+
+(def dispatch-table
+  [{:cmds ["start"] :fn cmd-start}
+   {:cmds ["stop"] :fn #(vector :stop %)}])
