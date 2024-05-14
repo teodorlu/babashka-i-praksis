@@ -1,0 +1,4 @@
+Live-demo av et bbscript for (litt) remote management av docker containers.
+Prepare for implosion.
+
+Emil.

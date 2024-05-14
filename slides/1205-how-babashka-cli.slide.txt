@@ -1,5 +1,3 @@
 BABASHKA/CLI
 
-(babashka.cli/parse-opts ["--verbose" "--depth" "3"])
-
-babashka.cli/dispatch
+    (babashka.cli/parse-opts ["--verbose" "--depth" "3"])
