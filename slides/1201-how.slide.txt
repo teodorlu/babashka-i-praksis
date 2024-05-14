@@ -4,5 +4,4 @@ BABASHKA: HOW TO USE IT
 
  - Multi-file bb/JVM projects at a glance
 
- - babashka/cli, babashka/process and babashka/fs:
-   a speed tour
+ - An introduction to babashka/cli, babashka/process and babashka/fs
