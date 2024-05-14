@@ -1,0 +1,5 @@
+BABASHKA/PROCESS
+
+(babashka.process/shell "vim")
+(babashka.process/shell "vim")
+babashka.process/process
