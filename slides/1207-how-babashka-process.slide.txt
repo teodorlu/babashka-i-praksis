@@ -1,18 +1,6 @@
 BABASHKA/PROCESS
 
-in a terminal:
+Spawn external processes.
 
-    $ rlwrap bb
-    user> (babashka.process/shell "nvim")
-
-in a REPL:
-
-    (str/split-lines (:out (process/shell {:out :string} "ls")))
-
-See also:
-
-    babashka.process/process
-
-process/process is lower-level than shell.
-stdin, stdout arguments and failure mode (errors or returning data)
-can be controlled via input arguments.
+    process/shell   ; spawn a process with sane defaults
+    process/process ; spawn a process with complete control

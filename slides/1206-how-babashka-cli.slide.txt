@@ -1,3 +1,6 @@
 BABASHKA/CLI
 
-    (babashka.cli/parse-opts ["--verbose" "--depth" "3"])
+Parse CLI arguments and/or subcommands.
+
+    fs/parse-opts   ; parse command line options
+    fs/dispatch.    ; entrypoint for running subcommmands

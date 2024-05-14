@@ -2,11 +2,7 @@ BABASHKA/FS
 
 Functions that do things on files.
 
-fs/glob          ; list all files matching glob expression
-fs/create-dirs   ; create multiple folders
-fs/which         ; does an application exist?
-fs/create-file.  ; create files and optionally set file permissions
-
-Demo:
-
-    use fs/glob to list all .txt files in this folder.
+    fs/glob          ; list files matching glob expression
+    fs/create-dirs   ; create multiple folders
+    fs/which         ; does an application exist?
+    fs/create-file.  ; create files with file permissions

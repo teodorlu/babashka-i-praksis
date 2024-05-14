@@ -1,0 +1,7 @@
+BABASHKA LIBS: DEMO
+
+Teodor cheat sheet:
+
+1. Open src/demo.clj and run repl demos
+
+2. Then run the script: `bb src/demo.clj`
