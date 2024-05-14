@@ -5,9 +5,11 @@
 
 (clojure.repl/doc process/shell)
 
-;; in a terminal
+;; in a terminal:
 ;;
 ;;     $ rlwrap bb
 ;;     user> (babashka.process/shell "nvim")
+
+;; in a REPL:
 
 (str/split-lines (:out (process/shell {:out :string} "ls")))
