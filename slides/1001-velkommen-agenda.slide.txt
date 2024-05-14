@@ -4,9 +4,9 @@ Velkommen til BABASHKA I PRAKSIS
 
 Agenda:
 
-    16:00-16:45 Mat, drikke og prat
-    16:45-17:45 Presentasjoner / demonstrasjoner
+    16:00-16:30 Mat, drikke og prat
+    16:30-17:30 Presentasjoner / demonstrasjoner
 
     Kort pause
 
-    18:00-19:00 Mob-programmering / QA
+    17:45-19:00 Mob-programmering / QA
