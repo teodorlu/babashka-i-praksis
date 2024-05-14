@@ -1,4 +1,4 @@
-BABASHKA-SCRIPT SOM ER ÉN FIL
+SINGLE-FILE BABASHKA SCRIPT
 
  1. `touch script.clj`
 

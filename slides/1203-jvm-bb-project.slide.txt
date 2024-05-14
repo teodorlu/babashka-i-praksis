@@ -1,7 +1,9 @@
-ET JVM/BB-KOMPATIBELT CLOJURE-PROSJEKT
+MULTI-FILE BB/JVM PROJECTS AT A GLANCE
 
-Samme avhengigheter med Babashka og JVM Clojure:
+It is possible to cross compatible BB/JVM-projects.
+A full demo is out of scope for this presentation.
 
-$ cat bb.edn
-{:deps {io.github.teodorlu/neil-quickadd {:local/root "."}}
- :bbin/bin {neil-quickadd {:main-opts ["-m" "teodorlu.neil-quickadd/-main"]}}}
+This repo is an example, feel free to copy stuff you
+like:
+
+    https://github.com/teodorlu/neil-quickadd
