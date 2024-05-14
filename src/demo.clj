@@ -87,9 +87,27 @@
   (prn [:started opts]))
 
 (defn cmd-nvim [_opts]
+  (babashka.process/shell "nvim"))
 
-  )
+(declare dispatch-table)
+
+(defn cmd-help [_]
+  (println "Available subcommands:")
+  (println)
+  (doseq [cmd (->> dispatch-table
+                   (map :cmds)
+                   (remove #{[]})
+                   (map #(str/join " " %)))]
+    (println (str "    " cmd))))
 
 (def dispatch-table
   [{:cmds ["start"] :fn cmd-start}
-   {:cmds ["stop"] :fn #(vector :stop %)}])
+   {:cmds ["nvim"] :fn cmd-nvim}
+   {:cmds [] :fn cmd-help}])
+
+(defn -main [& args]
+  (cli/dispatch dispatch-table args))
+
+;; Babashka sets `babashka.file` so that this is valid only when this file is run as a script.
+(when (= *file* (System/getProperty "babashka.file"))
+  (apply -main *command-line-args*))
